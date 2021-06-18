@@ -1,11 +1,12 @@
-import "./App.css";
+import SwapForm from "./Components/SwapForm";
+import "./App.scss";
 
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <p className='text-red-500'>Swap Exchange</p>
-      </header>
+      <div>
+        <SwapForm />
+      </div>
     </div>
   );
 }
