@@ -10,7 +10,7 @@ function AmountInput({
   return (
     <div className='flex flex-col w-full'>
       <label
-        for='name'
+        htmlFor='name'
         className='mb-1 text-xs sm:text-sm tracking-wide text-gray-600'
       >
         {label}

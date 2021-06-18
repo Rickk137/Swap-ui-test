@@ -1,5 +1,4 @@
 import SwapForm from "./Components/SwapForm";
-import "./App.scss";
 
 function App() {
   return (

@@ -4,7 +4,7 @@ import Balance from "./Balance";
 import AmountInput from "./AmountInput";
 import AssetSelect from "./AssetSelect";
 import cn from "classnames";
-import { getTokensInfo } from "../services/token";
+import { getTokensInfo } from "../services/tokenService";
 import { assets } from "../config";
 import swapIcon from "../assets/arrows.png";
 import SwapConfirm from "./SwapConfirm";
@@ -12,9 +12,9 @@ import SwapConfirm from "./SwapConfirm";
 function SwapForm() {
   const [confirmDialog, setConfirmDialog] = useState(false);
 
-  const [sourceAsset, setSourceAsset] = useState("BTC");
+  const [sourceAsset, setSourceAsset] = useState(assets[0].symbol);
   const [sourceAmount, setSourceAmount] = useState();
-  const [targetAsset, setTargetAsset] = useState("ETH");
+  const [targetAsset, setTargetAsset] = useState(assets[1].symbol);
   const [tokenInfo, setTokenInfo] = useState(null);
 
   useEffect(() => {

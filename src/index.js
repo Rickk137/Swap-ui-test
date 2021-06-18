@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./tailwind.output.scss";
+import "./style/Index.scss";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
