@@ -90,8 +90,10 @@ function SwapForm() {
     <Card>
       <div className='flex flex-col items-center gap-5'>
         <AmountInput
+          data-component-name='source-amount'
           asset={
             <AssetSelect
+              data-component-name='source-asset'
               options={assets.map((item) => ({
                 text: item.symbol,
                 value: item.symbol,
@@ -108,14 +110,17 @@ function SwapForm() {
           suffix={<Balance asset={sourceAsset} />}
         />
         <img
+          data-component-name='swap-asset'
           onClick={swapAssets}
           src={swapIcon}
           alt='swap'
           className='h-10 cursor-pointer'
         />
         <AmountInput
+          data-component-name='target-amount'
           asset={
             <AssetSelect
+              data-component-name='target-asset'
               options={assets
                 .filter((item) => item.symbol !== sourceAsset)
                 .map((item) => ({

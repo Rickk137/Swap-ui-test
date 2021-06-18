@@ -1,4 +1,4 @@
-function AssetSelect({ value, onChange, options }) {
+function AssetSelect({ value, onChange, options, ...props }) {
   return (
     <div className='relative inline-flex items-center'>
       <div className='absolute top-0 bottom-0 right-0 flex items-center'>
@@ -19,6 +19,7 @@ function AssetSelect({ value, onChange, options }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className=' text-gray-600 px-2 bg-white  focus:outline-none appearance-none text-sm'
+        {...props}
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>
