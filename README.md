@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Simple Swap App
+
+The project is deployed (https://swap-app-peiman.netlify.app/).
+
+###
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
