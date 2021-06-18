@@ -83,8 +83,14 @@ function SwapForm() {
   }, [sourceAmount, sourceAsset]);
 
   const isValid = useMemo(() => {
-    return sourceAsset && targetAsset && hasEnoughBalance;
-  }, [hasEnoughBalance, sourceAsset, targetAsset]);
+    return (
+      sourceAsset &&
+      targetAsset &&
+      hasEnoughBalance &&
+      sourceAmount &&
+      targetAmount
+    );
+  }, [hasEnoughBalance, sourceAmount, sourceAsset, targetAmount, targetAsset]);
 
   return (
     <Card>
